@@ -1,27 +1,44 @@
 import React, { Component } from 'react';
 import {Container, Row, Col} from 'react-bootstrap';
+import AboutNav from './AboutNav';
 import '../App.css';
 
 export class Bios extends Component {
 
+    constructor(){
+        super()
+        this.state = {
+            tab: 0
+        }
+    }
+
+    meetUs = (code) => {
+        var newState = {};
+        console.log('State Before Set: ' + this.state.tab)
+        newState['tab'] = code;
+        this.setState(newState);
+    }
+
     render() {
         return (
-            <Container fluid="md">
-                <Row> <Col><h1>About The Authors</h1></Col></Row>
-
+            
+            <div id='biosDiv'>
+                <AboutNav meetUs={this.meetUs} />
+                <Container fluid>
                 <Row>
-
-                 <Col>
-                     <p>Connor's Info</p>
-                 </Col>
-
-                 <Col>
-                     <p>Mike's Info</p>
-                 </Col>
-
+                    <Col xs={3} id="bioSideCol">
+                        <p>Hey</p>
+                    </Col>
+                    <Col id="bioMainCol">
+                        <p>Hey</p>
+                    </Col>
                 </Row>
-            </Container>
-        )
+                </Container>
+                
+             
+            </div>
+       
+        );
 
     }
 
