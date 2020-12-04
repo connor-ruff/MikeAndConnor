@@ -5,10 +5,11 @@ import '../App.css';
 class AboutNav extends Component {
 
 
+
     render(){
         return (
 
-            <Navbar bg="dark" variant="dark" id="bioNavBar" style={{ minWidth: 700 }}>
+            <Navbar bg="dark" variant="dark" id="bioNavBar" style={{ minWidth: 700, borderRadius: 10}}>
              <Nav className="mr-auto">
                 <Nav.Link onClick={() => this.props.meetUs(0)}>About</Nav.Link>
                 <Nav.Link onClick={() => this.props.meetUs(1)}>Meet Mike</Nav.Link>
