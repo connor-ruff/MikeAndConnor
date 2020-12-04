@@ -2,6 +2,9 @@ import React, { Component } from 'react';
 import {Container, Row, Col} from 'react-bootstrap';
 import AboutNav from './AboutNav';
 import '../App.css';
+import BroPicture from '../Images/MnCpic.jpg'; 
+import BirdGif from '../Images/flappybird.gif';
+import HockeyGif from '../Images/hockeyplayer.gif';
 
 class Bios extends Component {
 
@@ -81,8 +84,27 @@ class Bios extends Component {
             return (
                 <div id='biosDiv'>
                     <AboutNav meetUs={this.meetUs} />
-            
-
+                    <Container fluid>
+                        <Row>
+                            <Col>
+                                <br/>
+                                <p> Mike and Connor's Web App!!! </p>
+                            </Col>
+                        </Row>
+                        <Row>
+                            <Col className="BPCol">
+                                <img src={HockeyGif} alt="MnC" className="HockeyGif"/>
+                                
+                            </Col>
+                            <Col className="BPCol">
+                                <img src={BroPicture} alt="MnC" className="BroPicture"/>
+                                
+                            </Col>
+                            <Col className="BPCol">
+                                <img src={BirdGif} alt="MnC" className="BirdGif"/>                                
+                            </Col>
+                        </Row>
+                    </Container>
                 </div>
             )
         }
