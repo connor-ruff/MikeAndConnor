@@ -3,13 +3,37 @@
 .App {
   text-align: center;
   background-color: #659dbd;
-  margin-left: 10px;
-  margin-right: 10px;
+ 
 }
 
 #bioSideCol {
   background-color: teal;
 }
+
+.BroPicture {
+  border-radius: 10px;
+  max-width: 500px;
+  overflow: hidden;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  border-color: teal;
+}
+
+.BPCol {
+  padding-bottom: 30px;
+}
+
+.BirdGif {
+  max-width: 225px;
+  transform: scaleX(-1);
+}
+
+.HockeyGif {
+  padding-top: 20px;
+  max-width: 190px;
+  transform: scaleX(-1);
+}
+
 
 
 
