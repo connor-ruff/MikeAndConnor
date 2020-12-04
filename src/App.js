@@ -10,7 +10,7 @@ class App extends Component {
 
         <Bios />
 
-        <p>Mike and Connor's Web App</p>
+        <p>Mike and Connor's Web App!!!</p>
 
       </div>
     );
