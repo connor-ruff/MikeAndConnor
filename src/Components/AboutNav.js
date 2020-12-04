@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import {Container, Row, Col, Navbar, Nav, Form, FormControl, Button} from 'react-bootstrap';
 import '../App.css';
 
-export class AboutNav extends Component {
+class AboutNav extends Component {
 
 
     render(){
