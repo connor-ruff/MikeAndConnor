@@ -15,20 +15,18 @@ class Bios extends Component {
             mikeInfo : {
                 name: "Michael Peter Beebe",
                 email: "mpb9@live.unc.edu",
-                image : "" // TODO: add Mike's image
+                image : "", // TODO: add Mike's image
+                sign: 'scorpio',
+                uni: 'University of North Carolina at Chapel Hill'
             },
             connorInfo : {
                 name: "Connor Blaise Ruff",
                 email: "cruff@nd.edu",
-                image: "https://ace.nd.edu/media/zoo/images/Connor_Ruff_5704571696f0947b46902f5ff16ddf67.jpg"
+                image: "https://ace.nd.edu/media/zoo/images/Connor_Ruff_5704571696f0947b46902f5ff16ddf67.jpg",
+                sign: 'libra',
+                uni: 'University of Notre Dame'
             },
 
-            mikeOverview : "this is michael's overview",
-            connorOverview : "this is connor's overview",
-            mikeDesc : "Mikinos is a cool guy",
-            connorDesc : "alright arlight alright",
-            aboutLeft : "about..,",
-            aboutRight: "this is the about section"
         }
     }
     meetUs = (code) => {
@@ -39,22 +37,15 @@ class Bios extends Component {
 
     render() {
 
-        let dispName;
-        let dispEmail;
-        let dispImage;
+        let dispObj;
+      
         if (this.state.tab == 1){
-            dispName = this.state.mikeInfo.name
-            dispEmail = this.state.mikeInfo.email
+            dispObj = this.state.mikeInfo
         }
         else if (this.state.tab == 2){
-            dispName = this.state.connorInfo.name
-            dispEmail = this.state.connorInfo.email
-            dispImage = this.state.connorInfo.image
+            dispObj = this.state.connorInfo
         }
         else{
-            dispName = ""
-            dispEmail = ""
-            dispImage = ""
         }
 
         
@@ -66,9 +57,10 @@ class Bios extends Component {
                     <Container fluid>
                     <Row>
                         <Col xs={3} id="bioSideCol">
-                             <img src={dispImage} ></img>
-                             <h5>Name: {dispName}</h5>
-                             <h6>Email: {dispEmail}</h6> 
+                             <img src={dispObj.image} style={{padding: '5px', borderRadius: 20}} ></img>
+                             <h5>Name: {dispObj.name}</h5>
+                             <h6>Email: {dispObj.email}</h6> 
+                             <h6>Sign: {dispObj.sign}</h6>
                         </Col>
                         <Col id="bioMainCol">
                             <h1>TBD</h1>
