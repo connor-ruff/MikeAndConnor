@@ -12,7 +12,7 @@ class ImageCar extends Component {
         return (
                 <Carousel id='carO'>
                     {
-                        backYardBirds.images.map(pic => 
+                        this.props.pics.map(pic => 
                             <Carousel.Item className='carousel-item'>
                                 <img 
                                     src={pic.src}

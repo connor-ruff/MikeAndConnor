@@ -17,14 +17,20 @@ class Bios extends Component {
                 email: "mpb9@live.unc.edu",
                 image : "", // TODO: add Mike's image
                 sign: 'scorpio',
-                uni: 'University of North Carolina at Chapel Hill'
+                uni: 'University of North Carolina at Chapel Hill',
+                major: 'Computer Science',
+                linkedIn: 'https://www.linkedin.com/in/michael-beebe-302664196/',
+                descr: 'Mikinos'
             },
             connorInfo : {
                 name: "Connor Blaise Ruff",
                 email: "cruff@nd.edu",
                 image: "https://ace.nd.edu/media/zoo/images/Connor_Ruff_5704571696f0947b46902f5ff16ddf67.jpg",
                 sign: 'libra',
-                uni: 'University of Notre Dame'
+                uni: 'University of Notre Dame',
+                major: 'Computer Science',
+                linkedIn: 'https://www.linkedin.com/in/connor-ruff-37b56616b/',
+                descr: 'Hello There!'
             },
 
         }
@@ -60,10 +66,13 @@ class Bios extends Component {
                              <img src={dispObj.image} style={{padding: '5px', borderRadius: 20}} ></img>
                              <h5>Name: {dispObj.name}</h5>
                              <h6>Email: {dispObj.email}</h6> 
+                             <h6>Education: {dispObj.uni}</h6>
+                             <h6>Major: {dispObj.major}</h6>
+                             <h6>Professional: <a href={dispObj.linkedIn}>linkedIn</a></h6>
                              <h6>Sign: {dispObj.sign}</h6>
                         </Col>
                         <Col id="bioMainCol">
-                            <h1>TBD</h1>
+                            <h1>{dispObj.descr}</h1>
                         </Col>
                     </Row>
                     </Container>

@@ -2,13 +2,14 @@ import React, { Component } from 'react'
 import backYardBirds from '../Constants/backYardBirds'
 
 class SightList extends Component {
+    
     render() {
         return (
             <div className="birdList">
-                <h5>Backyard Sightings:</h5>
+                <h5>Sight List:</h5>
                  <ul>
                      {
-                         backYardBirds.birdList.map(bird => 
+                         this.props.birds.map(bird => 
                              <li>{bird}</li>
                              )
                      }
