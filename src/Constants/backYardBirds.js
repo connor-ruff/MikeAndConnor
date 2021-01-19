@@ -19,10 +19,29 @@ const backYardBirds = {
                 desc: '2 December 2020. Charlotte, NC'
             },
             {
-                src: '/BirdingPics/12.2.ChippingSpar3.JPG',
+                src: './BirdingPics/1.19.Creeper.JPG',
+                height: 563,
+                bird: 'Brown Creeper',
+                desc: '19 January 2021. Charlotte, NC'
+            },
+            {
+                src: '/BirdingPics/1.19.Chickadee.JPG',
+                height: 563,
+                bird: 'Carolina Chickadee',
+                desc: '19 January 2021. Charlotte, NC'
+
+            },
+            {
+                src: './BirdingPics/1.19.Titmouse.JPG',
+                height: 563,
+                bird: 'Tufted Titmouse',
+                desc: '19 January 2021. Charlotte, NC'
+            },
+            {
+                src: '/BirdingPics/12.17.FoxSparrow.JPG',
                 height: 563,
                 bird: 'Fox Sparrow',
-                desc: '2 December 2020. Charlotte, NC'
+                desc: '17 December 2020. Charlotte, NC'
 
             },
             {
@@ -40,17 +59,10 @@ const backYardBirds = {
 
             },
             {
-                src: '/BirdingPics/12.2.Wren.JPG',
+                src: '/BirdingPics/12.11.Wren.JPG',
                 height: 563,
                 bird: 'Carolina Wren',
-                desc: '2 December 2020. Charlotte, NC'
-
-            },
-            {
-                src: '/BirdingPics/12.3.Chicakdee.JPG',
-                height: 563,
-                bird: 'Carolina Chickadee',
-                desc: '3 December 2020. Charlotte, NC'
+                desc: '11 December 2020. Charlotte, NC'
 
             },
             {
@@ -59,6 +71,18 @@ const backYardBirds = {
                 bird: 'Downy Woodpecker',
                 desc: '5 December 2020. Charlotte, NC'
 
+            },
+            {
+                src: './BirdingPics/12.17.Cardinal.JPG',
+                height: 563,
+                bird: 'Northern Cardinal',
+                desc: '17 December 2020. Charlotte, NC'
+            },
+            {
+                src: './BirdingPics/1.19.SongSparrow.JPG',
+                height: 563,
+                bird: 'Song Sparrow',
+                desc: '19 January 2021. Charlotte, NC'
             },
             {
                 src: '/BirdingPics/12.5.Robin.JPG',
@@ -85,7 +109,10 @@ const backYardBirds = {
         'Fox Sparrow', 
         'American Goldfinch',
         'American Robin',
-        'American Crow'
+        'American Crow',
+        'Brown Creeper',
+        'Ruby-Crowned Kinglet',
+        'Song Sparrow'
     ]
 
 }
