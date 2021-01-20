@@ -19,6 +19,12 @@ const backYardBirds = {
                 desc: '2 December 2020. Charlotte, NC'
             },
             {
+                src: './BirdingPics/1.20.BrownHeadNut.JPG',
+                height: 563,
+                bird: 'Brown-Headed Nuthatch',
+                desc: '20 January 2021. Charlotte, NC'
+            },
+            {
                 src: './BirdingPics/1.19.Creeper.JPG',
                 height: 563,
                 bird: 'Brown Creeper',
@@ -43,6 +49,12 @@ const backYardBirds = {
                 bird: 'Fox Sparrow',
                 desc: '17 December 2020. Charlotte, NC'
 
+            },
+            {
+                src: './BirdingPics/1.20.RubyCrownZoom.JPG',
+                height: 563,
+                bird: 'Ruby-Crowned Kinglet',
+                desc: '20 January 2021. Charlotte, NC'
             },
             {
                 src: '/BirdingPics/12.2.Goldfinch2.JPG',
@@ -112,7 +124,9 @@ const backYardBirds = {
         'American Crow',
         'Brown Creeper',
         'Ruby-Crowned Kinglet',
-        'Song Sparrow'
+        'Song Sparrow',
+        'Brown-Headed Nuthatch',
+        'Yellow-Rumped Warbler'
     ]
 
 }
