@@ -126,7 +126,8 @@ const backYardBirds = {
         'Ruby-Crowned Kinglet',
         'Song Sparrow',
         'Brown-Headed Nuthatch',
-        'Yellow-Rumped Warbler'
+        'Yellow-Rumped Warbler',
+        'Eastern Phoebe'
     ]
 
 }
