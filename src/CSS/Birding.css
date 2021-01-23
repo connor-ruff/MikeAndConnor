@@ -4,6 +4,8 @@
     align-content: center;
     background-color: #7395AE;
     border-radius: 50px;
+    margin: 10px;
+
   }
   
   .carousel-item img {
@@ -17,8 +19,8 @@
   #headerRow {
       background-color: #7395AE;
       border-radius: 100px;
-      padding: 10px;
-      margin: 5px;
+      padding: 10px;        /* This is the space in between ribbon and words inside */
+      margin: 5px;          /* This is the space between ribbon and the elements outside the ribbon */
   }
 
   .birdList {
@@ -27,11 +29,6 @@
       background-color: gray;
       border-radius: 10px;
       color: white;
-  }
-
-  .bigList {
-    max-height: 200px;
-    overflow: auto;
-    background-color: gray;
-    color: white;
+      max-height: 563px;
+      overflow: auto;
   }
