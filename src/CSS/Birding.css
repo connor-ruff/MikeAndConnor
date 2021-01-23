@@ -1,0 +1,34 @@
+#carO {
+    height: 563px;
+    width: 1000px;
+    align-content: center;
+    background-color: #7395AE;
+    border-radius: 50px;
+    margin: 10px;
+
+  }
+  
+  .carousel-item img {
+    width: auto;
+    margin: auto;
+    display: block;
+    align-content: flex;
+    border-radius: 50px;
+  }
+  
+  #headerRow {
+      background-color: #7395AE;
+      border-radius: 100px;
+      padding: 10px;        /* This is the space in between ribbon and words inside */
+      margin: 5px;          /* This is the space between ribbon and the elements outside the ribbon */
+  }
+
+  .birdList {
+      padding: 10px;
+      margin: 10px;
+      background-color: gray;
+      border-radius: 10px;
+      color: white;
+      max-height: 563px;
+      overflow: auto;
+  }
