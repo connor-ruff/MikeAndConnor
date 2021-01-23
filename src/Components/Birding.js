@@ -21,10 +21,10 @@ class Birding extends Component {
 
                 <Row>
                     <Col xs={4}>
-                        <BirdListComp head="2021 Year List:" apiURL='https://ruffapi.azurewebsites.net/list2021'/>
+                        <BirdListComp head="2021 Year List" apiURL='https://ruffapi.azurewebsites.net/list2021'/>
                     </Col>
                     <Col xs={4}>
-                        <BirdListComp head="Life List:" apiURL='https://ruffapi.azurewebsites.net/lifelist'/>
+                        <BirdListComp head="Life List" apiURL='https://ruffapi.azurewebsites.net/lifelist'/>
                     </Col>
                 </Row>
 

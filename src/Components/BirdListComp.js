@@ -22,8 +22,17 @@ export class BirdListComp extends Component {
 
         return (
             <div className="birdList">
-                <h5>{this.props.head}</h5>
-                <ul  className="bigList">
+               {
+                   this.state.loading || this.state.birdsObj == null ?
+                <h5>
+                   <b> {this.props.head} </b>
+                </h5>
+                :
+                <h5>
+                   <b> {this.props.head} (Total: {this.state.birdsObj.length}): </b>
+                </h5>
+                }   
+                <ul  style={{maxHeight: '200px'}}>
 
                 {this.state.loading || this.state.birdsObj == null ? <div>Loading....</div> : 
                     this.state.birdsObj.map(bird =>
