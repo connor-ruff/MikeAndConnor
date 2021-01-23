@@ -26,4 +26,12 @@
       margin: 10px;
       background-color: gray;
       border-radius: 10px;
+      color: white;
+  }
+
+  .bigList {
+    max-height: 200px;
+    overflow: auto;
+    background-color: gray;
+    color: white;
   }
