@@ -45,10 +45,10 @@ class Bios extends Component {
 
         let dispObj;
       
-        if (this.state.tab == 1){
+        if (this.state.tab === 1){
             dispObj = this.state.mikeInfo
         }
-        else if (this.state.tab == 2){
+        else if (this.state.tab === 2){
             dispObj = this.state.connorInfo
         }
         else{
@@ -63,7 +63,7 @@ class Bios extends Component {
                     <Container fluid>
                     <Row>
                         <Col xs={3} id="bioSideCol">
-                             <img src={dispObj.image} style={{padding: '5px', borderRadius: 20}} ></img>
+                             <img src={dispObj.image} alt='A Good Looking Guy' style={{padding: '5px', borderRadius: 20}} ></img>
                              <h5>Name: {dispObj.name}</h5>
                              <h6>Email: {dispObj.email}</h6> 
                              <h6>Education: {dispObj.uni}</h6>

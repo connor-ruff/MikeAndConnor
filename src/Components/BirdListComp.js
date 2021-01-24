@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import axios from 'axios'
+
 
 export class BirdListComp extends Component {
 
@@ -12,7 +12,6 @@ export class BirdListComp extends Component {
         const url = this.props.apiURL;
         const response = await fetch(url);
         const data = await response.json();
-        console.log(data)
         this.setState({birdsObj: data["Data"], loading: false})
     }
 
@@ -35,8 +34,8 @@ export class BirdListComp extends Component {
                 <ul  style={{maxHeight: '200px'}}>
 
                 {this.state.loading || this.state.birdsObj == null ? <div>Loading....</div> : 
-                    this.state.birdsObj.map(bird =>
-                        <li>{bird["Species"]} (ID: {bird["ID"]})</li>)
+                    this.state.birdsObj.map( (bird, index) =>
+                        <li key={index}>{bird["Species"]} (ID: {bird["ID"]})</li>)
                 }
                 
                 </ul>
