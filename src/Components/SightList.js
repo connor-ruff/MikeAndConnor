@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import backYardBirds from '../Constants/backYardBirds'
 
 class SightList extends Component {
     
@@ -9,8 +8,8 @@ class SightList extends Component {
                 <h5>Sight List:</h5>
                  <ul>
                      {
-                         this.props.birds.map(bird => 
-                             <li>{bird}</li>
+                         this.props.birds.map( (bird, index) => 
+                             <li key={index}>{bird}</li>
                              )
                      }
                  </ul>

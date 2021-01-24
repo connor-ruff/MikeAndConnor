@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
-import {Carousel, Container } from 'react-bootstrap'
-import backYardBirds from '../Constants/backYardBirds'
+import {Carousel } from 'react-bootstrap'
 import '../CSS/Birding.css'
 
 class ImageCar extends Component {
@@ -12,9 +11,10 @@ class ImageCar extends Component {
         return (
                 <Carousel id='carO'>
                     {
-                        this.props.pics.map(pic => 
-                            <Carousel.Item className='carousel-item'>
+                        this.props.pics.map( (pic, index) => 
+                            <Carousel.Item key={index} className='carousel-item'>
                                 <img 
+                                    alt='Bird'
                                     src={pic.src}
                                     height={pic.height} 
                                     />
