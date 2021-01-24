@@ -8,6 +8,7 @@ import HockeyGif from '../Images/hockeyplayer.gif';
 import MyInfo from './MyInfo'
 import snapCodeRuff from '../Images/snapcodeBitmojiRuff.svg'
 import snapCodeBeebe from '../Images/snapcodeBitmojiBeebe.svg'
+import ReactPlayer from 'react-player'
 
 class Bios extends Component {
 
@@ -115,7 +116,11 @@ class Bios extends Component {
                                 <img src={BirdGif} alt="MnC" className="BirdGif"/>                                
                             </Col>
                         </Row>
+                        
+                        
                     </Container>
+
+                    
                 </div>
             )
         }

@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import {Container, Row, Col} from 'react-bootstrap'
 import {Timeline} from 'react-twitter-widgets'
-import ReactPlayer from 'react-player'
+
 
 
 
@@ -29,7 +29,7 @@ export class MyInfo extends Component {
 
                 <Col xs={4}>
                     <h4>Add Me on Snapchat!</h4>
-                    <img src={this.props.snapCode} />
+                    <img src={this.props.snapCode}  />
                 </Col>
             </Row>
             </Container>
