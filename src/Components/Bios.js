@@ -5,6 +5,9 @@ import '../App.css';
 import BroPicture from '../Images/MnCpic.jpg'; 
 import BirdGif from '../Images/flappybird.gif';
 import HockeyGif from '../Images/hockeyplayer.gif';
+import MyInfo from './MyInfo'
+import snapCodeRuff from '../Images/snapcodeBitmojiRuff.svg'
+import snapCodeBeebe from '../Images/snapcodeBitmojiBeebe.svg'
 
 class Bios extends Component {
 
@@ -15,12 +18,14 @@ class Bios extends Component {
             mikeInfo : {
                 name: "Michael Peter Beebe",
                 email: "mpb9@live.unc.edu",
-                image : "", // TODO: add Mike's image
+                image : "https://pbs.twimg.com/profile_images/1308628907000725504/n1G39Xoy_400x400.jpg", // TODO: add Mike's image
                 sign: 'scorpio',
                 uni: 'University of North Carolina at Chapel Hill',
                 major: 'Computer Science',
                 linkedIn: 'https://www.linkedin.com/in/michael-beebe-302664196/',
-                descr: 'Mikinos'
+                descr: 'Mikinos',
+                twitterName: 'mbeeebe',
+                snapCode: snapCodeBeebe
             },
             connorInfo : {
                 name: "Connor Blaise Ruff",
@@ -30,7 +35,10 @@ class Bios extends Component {
                 uni: 'University of Notre Dame',
                 major: 'Computer Science',
                 linkedIn: 'https://www.linkedin.com/in/connor-ruff-37b56616b/',
-                descr: 'Hello There!'
+                descr: 'Hello There!',
+                twitterName: '_connorruff_',
+                snapCode: snapCodeRuff
+
             },
 
         }
@@ -63,7 +71,7 @@ class Bios extends Component {
                     <Container fluid>
                     <Row>
                         <Col xs={3} id="bioSideCol">
-                             <img src={dispObj.image} alt='A Good Looking Guy' style={{padding: '5px', borderRadius: 20}} ></img>
+                             <img src={dispObj.image} alt='A Good Looking Guy' style={{ height: '200px', padding: '5px', borderRadius: 20}} ></img>
                              <h5>Name: {dispObj.name}</h5>
                              <h6>Email: {dispObj.email}</h6> 
                              <h6>Education: {dispObj.uni}</h6>
@@ -75,6 +83,8 @@ class Bios extends Component {
                             <h1>{dispObj.descr}</h1>
                         </Col>
                     </Row>
+
+                    <MyInfo twitterName={dispObj.twitterName} snapCode={dispObj.snapCode}/>
                     </Container>
 
 

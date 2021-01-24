@@ -34,5 +34,8 @@
   transform: scaleX(-1);
 }
 
-
+.basic {
+  padding: 10px;
+  margin: 10px;
+}
 
