@@ -6,6 +6,7 @@ import BirdListComp from './BirdListComp.js'
 import '../CSS/Birding.css'
 import backYardBirds from '../Constants/backYardBirds'
 import lakeWylieBirds from '../Constants/lakeWylieBirds.js';
+import caliBirds from '../Constants/caliBirds.js';
 
 class Birding extends Component {
 
@@ -27,6 +28,21 @@ class Birding extends Component {
                         <BirdListComp head="Life List" apiURL='https://ruffapi.azurewebsites.net/lifelist'/>
                     </Col>
                 </Row>
+
+                <Row id='headerRow'>
+                    <Col>
+                     <h1 style={{color: 'white'}}>San Francisco Spring Semester 2021</h1>
+                    </Col>
+                </Row>
+                <Row>
+                    <Col xs={3}>
+                        <SightList birds={caliBirds.birdList}/>
+                    </Col>
+                    <Col xs={9}>
+                        <ImageCar pics={caliBirds.images} />
+                    </Col>
+                </Row>
+                
 
                 <Row id='headerRow'>
                     <Col>

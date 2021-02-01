@@ -29,7 +29,7 @@ export class MyInfo extends Component {
 
                 <Col xs={4}>
                     <h4>Add Me on Snapchat!</h4>
-                    <img src={this.props.snapCode}  />
+                    <img src={this.props.snapCode} alt='Snapcode'  />
                 </Col>
             </Row>
             </Container>
