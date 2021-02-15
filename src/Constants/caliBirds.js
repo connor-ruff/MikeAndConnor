@@ -13,7 +13,7 @@ const caliBirds = {
             desc: '7 February 2021. East Palo Alto, CA'
         },
         {
-            src: './BirdingPics/2.14.PurpleFinchEnhanced.JPG',
+            src: './BirdingPics/2.14.PurpleFinchEnhanced.jpg',
             height: 563,
             bird: 'Purple Finch',
             desc: '14 February 2021. Menlo Park ,CA'
