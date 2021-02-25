@@ -51,7 +51,7 @@ const backYardBirds = {
 
             },
             {
-                src: './BirdingPics/1.20.RubyCrownZoomed.JPG',
+                src: './BirdingPics/1.20.RubyCrownZoom.JPG',
                 height: 563,
                 bird: 'Ruby-Crowned Kinglet',
                 desc: '20 January 2021. Charlotte, NC'

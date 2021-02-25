@@ -31,10 +31,22 @@ const caliBirds = {
             desc: '31 January 2021. Stanford University. Palo Alto, CA'
         },
         {
+            src: './BirdingPics/2.20.CaliThrasher.JPG',
+            height: 563,
+            bird: 'California Thrasher',
+            desc: '20 February 2021. Palo Alto, CA'
+        },
+        {
             src: './BirdingPics/2.14.Avocet.JPG',
             height: 563,
             bird: 'American Avocet',
             desc: '14 February 2021. Menlo Park, CA'
+        },
+        {
+            src: './BirdingPics/2.20.WesternBluebird.JPG',
+            height: 563,
+            bird: 'Western Bluebird',
+            desc: '20 February 2021. Palo Alto, CA'
         },
         {
             src: './BirdingPics/1.31.MourningDove.JPG',
@@ -55,18 +67,6 @@ const caliBirds = {
             desc: '14 February 2021. Menlo Park, CA'
         },
         {
-            src: './BirdingPics/2.14.BlackNeckStilt.JPG',
-            height: 563,
-            bird: 'Black-Necked Stilt',
-            desc: '14 February 2021. Menlo Park, CA'
-        },
-        {
-            src: './BirdingPics/1.31.HermitThrush.JPG',
-            height: 563,
-            bird: 'Hermit Thrush',
-            desc: '31 January 2021. Stanford University. Palo Alto, CA'
-        },
-        {
         src: './BirdingPics/1.31.BlackPhoebe.JPG',
         height: 563,
         bird: 'Black Phoebe',
@@ -85,6 +85,12 @@ const caliBirds = {
             desc: '14 February 2021. Menlo Park, CA'
         },
         {
+            src: './BirdingPics/1.31.HermitThrush.JPG',
+            height: 563,
+            bird: 'Hermit Thrush',
+            desc: '31 January 2021. Stanford University. Palo Alto, CA'
+        },
+        {
             src: './BirdingPics/2.7.Bushtit.JPG',
             height: 563,
             bird: 'Bushtit',
@@ -95,24 +101,6 @@ const caliBirds = {
             height: 563,
             bird: 'Pied-Billed Grebe',
             desc: '14 February 2021. Menlo Park, CA'
-        },
-        {
-            src: './BirdingPics/2.14.GreenWingTeal.JPG',
-            height: 563,
-            bird: 'Green-Winged Teal',
-            desc: '14 February 2021. Menlo Park, CA'
-        },
-        {
-            src: './BirdingPics/2.7.NorthernShoveler.JPG',
-            height: 563,
-            bird: 'Northern Shoveler',
-            desc: '7 February 2021. East Palo Alto, CA'
-        },
-        {
-            src: './BirdingPics/2.7.SaysPhoebe.JPG',
-            height: 563,
-            bird: 'Say\'s Phoebe',
-            desc: '7 February 2021. East Palo Alto, CA'
         }
     ],
 
@@ -167,7 +155,10 @@ const caliBirds = {
         'Pied-Billed Grebe',
         'Eared Grebe',
         'Western Meadowlark',
-        'Brown-Headed Cowbird'
+        'Brown-Headed Cowbird',
+        'Western Bluebird',
+        'California Thrasher',
+        'California Quail'
 
     ]
 }
