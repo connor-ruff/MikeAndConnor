@@ -1,6 +1,13 @@
 const caliBirds = {
     images: [
         {
+            src: './BirdingPics/4.10.AllensHumm2.JPG',
+            height: 563,
+            bird: 'Allen\'s Hummingbird',
+            desc: '10 April 2021. Half Moon Bay'
+        },
+
+        {
          src: './BirdingPics/1.31.AcornWoodpecker.JPG',
          height: 563,
          bird: 'Acorn Woodpecker',
@@ -19,6 +26,12 @@ const caliBirds = {
             desc: '14 February 2021. Menlo Park ,CA'
         },
         {
+            src: './BirdingPics/4.10.PygmyNuthatch.JPG',
+            height: 563,
+            bird: 'Pygmy Nuthatch',
+            desc: '10 April 2021. Half Moon Bay'
+        },
+        {
             src: './BirdingPics/1.31.Nuttals.JPG',
             height: 563,
             bird: 'Nuttall\'s Woodpecker (female)',
@@ -35,6 +48,12 @@ const caliBirds = {
             height: 563,
             bird: 'California Thrasher',
             desc: '20 February 2021. Palo Alto, CA'
+        },
+        {
+            src: './BirdingPics/4.10.SpottedTowhee.JPG',
+            height: 563,
+            bird: 'Spotted Towhee',
+            desc: '10 April 2021. Half Moon Bay'
         },
         {
             src: './BirdingPics/2.14.Avocet.JPG',
@@ -159,7 +178,15 @@ const caliBirds = {
         'Western Bluebird',
         'California Thrasher',
         'California Quail',
-        'Long-Billed Dowhitcher'
+        'Long-Billed Dowhitcher',
+        'Steller\'s Jay',
+        'Cooper\'s Hawk',
+        'Red-Masked Parakeet',
+        'Pygmy Nuthatch',
+        'Allen\'s Hummingbird',
+        'Common Raven',
+        'Red-Winged Blackbird',
+        'Red-Shouldered Hawk'
 
     ]
 }
