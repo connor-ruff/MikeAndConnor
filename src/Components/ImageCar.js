@@ -16,7 +16,7 @@ class ImageCar extends Component {
                                 <img 
                                     alt='Bird'
                                     src={pic.src}
-                                    height={pic.height} 
+                                  //  height={pic.height}
                                     />
                                 <Carousel.Caption style={{textAlign: 'left'}}>
                                     <h3 style={{backgroundColor: 'gray'}}>{pic.bird}</h3>
