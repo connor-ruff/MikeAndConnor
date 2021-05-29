@@ -37,6 +37,8 @@
       overflow: scroll;
       overflow-x: scroll;
       width: 100%;
+      min-width: 200px;
+    
   }
 
  
