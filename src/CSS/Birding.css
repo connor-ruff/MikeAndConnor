@@ -7,6 +7,7 @@
     margin: 10px;
     max-height: 563px;
     max-width: 1000px;
+    min-width: 600px;
   }
   
   .carousel-item img {
@@ -33,9 +34,8 @@
       border-radius: 10px;
       color: white;
       max-height: 563px;
-      overflow: auto;
+      overflow: scroll;
       overflow-x: scroll;
-      font-size: auto;
       width: 100%;
   }
 
