@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import {Container, Row, Col} from 'react-bootstrap';
 import './App.css';
 import Bios from './Components/Bios';
 
