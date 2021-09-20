@@ -8,6 +8,7 @@ import HockeyGif from '../Images/hockeyplayer.gif';
 import MyInfo from './MyInfo'
 import snapCodeRuff from '../Images/snapcodeBitmojiRuff.svg'
 import snapCodeBeebe from '../Images/snapcodeBitmojiBeebe.svg'
+import chillMike from '../Images/mikebeebechill.jpg'
 import ReactPlayer from 'react-player'
 
 class Bios extends Component {
@@ -19,12 +20,12 @@ class Bios extends Component {
             mikeInfo : {
                 name: "Michael Peter Beebe",
                 email: "mpb9@live.unc.edu",
-                image : "https://pbs.twimg.com/profile_images/1308628907000725504/n1G39Xoy_400x400.jpg", // TODO: add Mike's image
-                sign: 'scorpio',
+                image : chillMike, // TODO: add Mike's image
+                sign: 'Scorpio',
                 uni: 'University of North Carolina at Chapel Hill',
-                major: 'Computer Science',
+                major: 'Computer Science, Economics',
                 linkedIn: 'https://www.linkedin.com/in/michael-beebe-302664196/',
-                descr: 'Mikinos',
+                descr: 'Michael!',
                 twitterName: 'mbeeebe',
                 snapCode: snapCodeBeebe
             },
@@ -32,11 +33,11 @@ class Bios extends Component {
                 name: "Connor Blaise Ruff",
                 email: "cruff@nd.edu",
                 image: "https://ace.nd.edu/media/zoo/images/Connor_Ruff_5704571696f0947b46902f5ff16ddf67.jpg",
-                sign: 'libra',
+                sign: 'Libra',
                 uni: 'University of Notre Dame',
                 major: 'Computer Science',
                 linkedIn: 'https://www.linkedin.com/in/connor-ruff-37b56616b/',
-                descr: 'Hello There!',
+                descr: 'Connor!',
                 twitterName: '_connorruff_',
                 snapCode: snapCodeRuff
 
@@ -82,10 +83,11 @@ class Bios extends Component {
                         </Col>
                         <Col id="bioMainCol">
                             <h1>{dispObj.descr}</h1>
+                            <MyInfo twitterName={dispObj.twitterName} snapCode={dispObj.snapCode}/>
                         </Col>
                     </Row>
 
-                    <MyInfo twitterName={dispObj.twitterName} snapCode={dispObj.snapCode}/>
+                    
                     </Container>
 
 
@@ -100,7 +102,7 @@ class Bios extends Component {
                         <Row>
                             <Col>
                                 <br/>
-                                <p> Mike and Connor's Web App!!! </p>
+                                <h5> Mike and Connor's Web App!!! </h5>
                             </Col>
                         </Row>
                         <Row>

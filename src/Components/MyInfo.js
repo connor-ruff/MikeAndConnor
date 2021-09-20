@@ -10,12 +10,7 @@ export class MyInfo extends Component {
         return (
             <Container className='basic' fluid>
             <Row>
-
-                <Col xs={4}>
-                    <h4>Daily Thoughts...</h4>
-                </Col>
-
-                <Col xs={4}>
+                <Col xs={6}>
                     <h4>Check Me Out On Twitter!</h4>
                     <Timeline
                         dataSource={{
@@ -27,7 +22,7 @@ export class MyInfo extends Component {
                         }} />
                 </Col>
 
-                <Col xs={4}>
+                <Col xs={6}>
                     <h4>Add Me on Snapchat!</h4>
                     <img src={this.props.snapCode} alt='Snapcode'  />
                 </Col>
