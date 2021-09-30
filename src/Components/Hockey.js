@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { Component, useEffect } from 'react'
 import {Container, Row, Col} from 'react-bootstrap';
 import '../CSS/Hockey.css'
 import NHLrunningFUO from '../Images/NHLrunningFUO.jpg'
@@ -41,6 +41,21 @@ import wpgRolling from '../Images/NHLTeamRolling/wpgRolling.png'
 import wshRolling from '../Images/NHLTeamRolling/wshRolling.png'
 
 import TeamGen from './TeamGen'
+
+const Zoom = () => {
+    useEffect(() => {
+      const initialValue = document.body.style.zoom;
+  
+      // Change zoom level on mount
+      document.body.style.zoom = "60%";
+  
+      return () => {
+        // Restore default value
+        document.body.style.zoom = initialValue;
+      };
+    }, []);
+    return <></>;
+  };
 
 class Hockey extends Component {
     constructor(){
@@ -142,6 +157,7 @@ class Hockey extends Component {
             }
         }
     }
+    
     newTeam = (code) => {
         var newState = {};
         newState['tab'] = code;
@@ -150,6 +166,7 @@ class Hockey extends Component {
 
     render() {
         let dispObj;
+        
         if (this.state.tab === 0) dispObj = this.state.ana
         else if (this.state.tab === 1) dispObj = this.state.ari
         else if (this.state.tab === 2) dispObj = this.state.bos
@@ -186,6 +203,7 @@ class Hockey extends Component {
         }
         return (
             <Container style={{backgroundImage: `url(${rinkBackground})`, padding: '5px', minWidth: '1000px', textIndent: '10px'}} fluid>
+            <Zoom />
                 <Row id='headerR'>
                     <img src={hockeyPlayer} alt='' style={{ alignItems: 'left', height:'125px', width: '125px', paddingRight: '25px'}}/>
                     <Col>
