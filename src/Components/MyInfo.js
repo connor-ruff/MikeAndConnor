@@ -10,25 +10,21 @@ export class MyInfo extends Component {
         return (
             <Container className='basic' fluid>
             <Row>
-
-                <Col xs={4}>
-                    <h4>Daily Thoughts...</h4>
-                </Col>
-
-                <Col xs={4}>
-                    <h4>Check Me Out On Twitter!</h4>
+                <Col xs={6}>
+                    <h5 style={{paddingBottom: '10px'}}>Check Me Out On Twitter!</h5>
                     <Timeline
                         dataSource={{
                             sourceType: 'profile',
                             screenName: this.props.twitterName
                         }}
                         options={{
-                            height: '365'
+                            height: '310',
+                            width: '380'
                         }} />
                 </Col>
 
-                <Col xs={4}>
-                    <h4>Add Me on Snapchat!</h4>
+                <Col xs={6}>
+                    <h5 style={{paddingBottom: '10px'}}>Add Me on Snapchat!</h5>
                     <img src={this.props.snapCode} alt='Snapcode'  />
                 </Col>
             </Row>

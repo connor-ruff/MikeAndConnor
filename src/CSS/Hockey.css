@@ -1,0 +1,70 @@
+#headerR{
+    background-color: #425664;
+    border-radius: 3px;
+    padding: 15px;        /* This is the space in between ribbon and words inside */
+    margin: 15px; 
+}
+#paragraph{
+    color:#F6F4F2;
+    font-size: 17px;
+    text-indent: 0px;
+    padding-bottom: none;
+}
+#paragraph2{
+  color: #F6F4F2;
+  font-size: 17px;
+  text-indent: 5px;
+  padding-bottom: none;
+  font-style: italic;
+}
+.teamListBtn {
+    background-color: #F6F4F2;
+    color: #425664;
+    padding: 16px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 18px;
+    font-weight:bold;
+    border: none;
+    cursor: pointer;
+  }
+.teamList{
+    display: inline-block;
+    position: relative;
+}
+.teamList:hover .teamList-content {
+    display: block;
+    cursor: pointer;
+  }
+.teamList-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 250px;
+    box-shadow: 0px 8px 16px 0px rgba(226, 49, 49, 0.199);
+    padding: 12px 16px;
+    z-index: 1;
+    max-height: 400px;
+    overflow: scroll;
+    overflow-x: scroll;
+  }
+  .teamList-content a {
+    color: #425664;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .teamList-content a:hover {background-color: #f1f1f1}
+  
+  .teamList:hover .teamList {
+    background-color: #F6F4F2;
+  }
+
+  .teamBtn{
+    display: inline-block;
+    position: relative;
+    border: none;
+    color-adjust:inherit;
+    background-color: inherit;
+  }
