@@ -13,10 +13,10 @@ class Birding extends Component {
     render() {
         return (
           
-            <Container style={{backgroundColor: '#B1A296', padding: '10px', fontFamily: '', minWidth: '1000px'}} fluid >
+            <Container className='birdMain' style={{'padding': '10px'}} fluid >
                 <Row id='headerRow'>
                     <Col>
-                        <h1 style={{color: 'white'}}>Major Lists</h1>
+                        <h1 style={{color: 'black'}}>Major Lists</h1>
                     </Col>
                 </Row>
 
@@ -31,7 +31,7 @@ class Birding extends Component {
 
                 <Row id='headerRow'>
                     <Col>
-                     <h1 style={{color: 'white'}}>San Francisco Spring Semester 2021</h1>
+                     <h1 style={{color: 'black'}}>San Francisco Spring Semester 2021</h1>
                     </Col>
                 </Row>
                 <Row>
@@ -46,7 +46,7 @@ class Birding extends Component {
 
                 <Row id='headerRow'>
                     <Col>
-                        <h1 style={{color: 'white'}}>McDowell Nature Preserve Bird Trip January 9 2021 - Lake Wylie </h1>
+                        <h1 style={{color: 'black'}}>McDowell Nature Preserve Bird Trip January 9 2021 - Lake Wylie </h1>
                     </Col>
                 </Row>
                 <Row>
@@ -62,7 +62,7 @@ class Birding extends Component {
                 
                 <Row id='headerRow'>
                     <Col>
-                        <h1 style={{color: 'white'}}>Backyard Birds Winter 2020-2021 - Charlotte NC</h1>
+                        <h1 style={{color: 'black'}}>Backyard Birds Winter 2020-2021 - Charlotte NC</h1>
                     </Col>
                 </Row>
                 

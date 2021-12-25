@@ -21,7 +21,7 @@
   }
   
   #headerRow {
-      background-color: #7395AE;
+      background-color: #C1C8E4;
       border-radius: 100px;
       padding: 10px;        /* This is the space in between ribbon and words inside */
       margin: 10px;          /* This is the space between ribbon and the elements outside the ribbon */
@@ -30,15 +30,22 @@
   .birdList {
       padding: 10px;
       margin: 10px;
-      background-color: gray;
+      background-color: #84CEEB;
       border-radius: 10px;
-      color: white;
+      color: black;
       max-height: 563px;
       overflow: scroll;
       overflow-x: scroll;
       width: 100%;
       min-width: 200px;
     
+  }
+
+  .birdMain {
+    background-image: conic-gradient( #5680E9, black, #5680E9, black, #5680E9, black, #5680E9);
+    padding: '10px';
+    font-family: '';
+    min-width: '1000px';
   }
 
  

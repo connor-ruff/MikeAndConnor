@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import '../CSS/Birding.css'
 
 class SightList extends Component {
     
@@ -6,7 +7,7 @@ class SightList extends Component {
         return (
             <div className="birdList">
                 <h5>Sight List ({this.props.birds.length}):</h5>
-                 <ul>
+                 <ul >
                      {
                          this.props.birds.sort().map( (bird, index) => 
                              <li key={index}>{bird}</li>
