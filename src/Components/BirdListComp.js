@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import ScaleText from "react-scale-text";
 import {Spinner} from 'react-bootstrap'
 
 export class BirdListComp extends Component {
@@ -21,16 +22,21 @@ export class BirdListComp extends Component {
 
         return (
             <div className="birdList">
+          
                {
                    this.state.loading || this.state.birdsObj == null ?
+              
                 <h5>
                    <b> {this.props.head} </b>
                 </h5>
                 :
+              
                 <h5>
                    <b> {this.props.head} (Total: {this.state.birdsObj.length}): </b>
                 </h5>
-                }   
+              
+                } 
+              
                 <ul  style={{maxHeight: '200px'}}>
 
                 {this.state.loading || this.state.birdsObj == null ? <div>
@@ -39,12 +45,15 @@ export class BirdListComp extends Component {
                         <Spinner animation="border" size='sm' role="status"></Spinner><p style={{display: 'inline'}}>  Loading....</p>
 
                      </div> : 
+                    
                     this.state.birdsObj.map( (bird, index) =>
                         <li key={index}>{bird["Species"]} (ID: {bird["ID"]})</li>)
+                      
                 }
                 
                 </ul>
-   
+              
+          
             </div>
         )
     }

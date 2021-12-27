@@ -13,7 +13,7 @@ class Birding extends Component {
     render() {
         return (
           
-            <Container className='birdMain' style={{'padding': '10px'}} fluid >
+            <Container className='birdMain' style={{'padding': '10px'}} fluid>
                 <Row id='headerRow'>
                     <Col>
                         <h1 style={{color: 'black'}}>Major Lists</h1>
