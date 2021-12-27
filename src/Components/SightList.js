@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import ScaleText from "react-scale-text";
 import '../CSS/Birding.css'
 
 class SightList extends Component {
@@ -6,6 +7,8 @@ class SightList extends Component {
     render() {
         return (
             <div className="birdList">
+                
+               
                 <h5>Sight List ({this.props.birds.length}):</h5>
                  <ul >
                      {
@@ -14,6 +17,7 @@ class SightList extends Component {
                              )
                      }
                  </ul>
+                
             </div>
         )
     }

@@ -7,7 +7,7 @@
     margin: 10px;
     max-height: 563px;
     max-width: 1000px;
-    min-width: 600px;
+    min-width: 500px;
   }
   
   .carousel-item img {
@@ -37,15 +37,15 @@
       overflow: scroll;
       overflow-x: scroll;
       width: 100%;
-      min-width: 200px;
+      min-width: 150px;
     
   }
 
   .birdMain {
     background-image: conic-gradient( #5680E9, black, #5680E9, black, #5680E9, black, #5680E9);
-    padding: '10px';
+    padding: 10px;
     font-family: '';
-    min-width: '1000px';
+    min-width: 750px;
   }
 
  
