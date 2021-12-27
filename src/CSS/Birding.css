@@ -44,7 +44,6 @@
   .birdMain {
     background-image: conic-gradient( #5680E9, black, #5680E9, black, #5680E9, black, #5680E9);
     padding: 10px;
-    font-family: '';
     min-width: 750px;
   }
 
