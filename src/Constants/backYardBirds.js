@@ -12,12 +12,7 @@ const backYardBirds = {
                 bird: 'Norther Mockingbird',
                 desc: '5 December 2020. Charlotte, NC'
             },
-            {
-                src: '/BirdingPics/12.2.RedShoulder3.JPG',
-                height:  563,
-                bird: 'Red Shouldered Hawk (Juvenile)',
-                desc: '2 December 2020. Charlotte, NC'
-            },
+           
             {
                 src: './BirdingPics/1.20.BrownHeadNut.JPG',
                 height: 563,
