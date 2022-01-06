@@ -10,7 +10,10 @@
     "@testing-library/react": "^11.2.2",
     "@testing-library/user-event": "^12.3.0",
     "axios": "^0.21.1",
+    "md5": "^2.3.0",
     "react": "^17.0.1",
+    "react-alert": "^7.0.3",
+    "react-alert-template-basic": "^1.0.2",
     "react-bootstrap": "^1.4.0",
     "react-dom": "^17.0.1",
     "react-player": "^2.8.1",
@@ -18,7 +21,11 @@
     "react-router-dom": "^5.2.0",
     "react-scale-text": "^1.2.2",
     "react-scripts": "4.0.1",
+    "react-select": "^5.2.1",
+    "react-select-search": "^3.0.9",
     "react-twitter-widgets": "^1.9.5",
+    "semantic-ui-css": "^2.4.1",
+    "semantic-ui-react": "^2.0.4",
     "web-vitals": "^0.2.4"
   },
   "scripts": {
