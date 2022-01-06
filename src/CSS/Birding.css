@@ -47,4 +47,16 @@
     min-width: 750px;
   }
 
+  .addBirdMain {
+    background-image: conic-gradient( #5680E9, black, #5680E9, black, #5680E9, black, #5680E9);
+    color: white;
+    padding: 10px;
+    min-width: 750px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    
+  }
+
  

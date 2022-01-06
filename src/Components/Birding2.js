@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { Component, useState } from 'react'
 import {Container, Row, Col} from 'react-bootstrap';
 import {Button, Input} from 'semantic-ui-react'
 import ImageCar from './ImageCar.js'
@@ -8,12 +8,28 @@ import '../CSS/Birding.css'
 import backYardBirds from '../Constants/backYardBirds'
 import lakeWylieBirds from '../Constants/lakeWylieBirds.js';
 import caliBirds from '../Constants/caliBirds.js';
+import {useAlert} from 'react-alert';
 
-class Birding extends Component {
+export default function Birding2(props) {
+
+        const [pass, setPass] = useState('')
+
+        const alert = useAlert()
+    
+        var md5 = require('md5')
+
+        const enterPortal = () => {
+            if (md5(pass) == 'c9af7bbb75fde2d0e61ed7c4869e59c3') {
+                alert.success('Correct')
+                props.history.push('/bird/add')
+
+            } else {
+                alert.error('Wrong Password')
+            }
+
+        }
 
     
-
-    render() {
         return (
           
             <Container className='birdMain' style={{'padding': '10px'}} fluid>
@@ -31,8 +47,8 @@ class Birding extends Component {
                         <BirdListComp head="Life List" apiURL='https://ruffapi.azurewebsites.net/lifelist'/>
                     </Col>
                     <Col xs={4}>
-                        <Button>Add A Bird (Admin Only)</Button>
-                        <Input placeholder='password' />
+                        <Button onClick={enterPortal}>Add A Bird (Admin Only)</Button>
+                        <Input placeholder='password' onChange={(event, {value}) => setPass(value)} value={pass} />
                     </Col>
                 </Row>
 
@@ -89,7 +105,7 @@ class Birding extends Component {
                        
           
         )
-    }
+    
 }
 
-export default Birding
+
