@@ -7,6 +7,7 @@ import BirdListComp from './BirdListComp.js'
 import '../CSS/Birding.css'
 import backYardBirds from '../Constants/backYardBirds'
 import lakeWylieBirds from '../Constants/lakeWylieBirds.js';
+import birds2022 from '../Constants/birds2022.js';
 import caliBirds from '../Constants/caliBirds.js';
 import {useAlert} from 'react-alert';
 
@@ -41,7 +42,7 @@ export default function Birding2(props) {
 
                 <Row>
                     <Col xs={4}>
-                        <BirdListComp head="2021 Year List" apiURL='https://ruffapi.azurewebsites.net/list2021'/>
+                        <BirdListComp head="2022 Year List" apiURL='https://ruffapi.azurewebsites.net/list2022'/>
                     </Col>
                     <Col xs={4}>
                         <BirdListComp head="Life List" apiURL='https://ruffapi.azurewebsites.net/lifelist'/>
@@ -49,6 +50,20 @@ export default function Birding2(props) {
                     <Col xs={4}>
                         <Button onClick={enterPortal}>Add A Bird (Admin Only)</Button>
                         <Input placeholder='password' onChange={(event, {value}) => setPass(value)} value={pass} />
+                    </Col>
+                </Row>
+
+                <Row id='headerRow'>
+                    <Col>
+                     <h1 style={{color: 'black'}}>Sights of 2022</h1>
+                    </Col>
+                </Row>
+                <Row>
+                    <Col xs={3}>
+                        <SightList birds={birds2022.birdList}/>
+                    </Col>
+                    <Col xs={9}>
+                        <ImageCar pics={birds2022.images} />
                     </Col>
                 </Row>
 

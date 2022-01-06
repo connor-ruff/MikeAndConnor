@@ -47,7 +47,7 @@ export class BirdListComp extends Component {
                      </div> : 
                     
                     this.state.birdsObj.map( (bird, index) =>
-                        <li key={index}>{bird["Species"]} (ID: {bird["ID"]})</li>)
+                        <li key={index}>{bird["Species"]}</li>)
                       
                 }
                 
