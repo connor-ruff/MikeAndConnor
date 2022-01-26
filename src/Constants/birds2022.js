@@ -2,7 +2,7 @@ const birds2022 = {
 
     images: [
         {
-            src: '/BirdingPics/2022/1.22.Redbellied2.JPG',
+            src: '/BirdingPics/2022/1.22.RedBellied2.JPG',
             height: 563,
             bird: 'Red-Bellied Woodpecker',
             desc: 'Jan 22. St. Patrick County Park. South Bend, IN'
