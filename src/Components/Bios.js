@@ -2,16 +2,18 @@ import React, { Component, useEffect } from 'react';
 import {Container, Row, Col} from 'react-bootstrap';
 import AboutNav from './AboutNav';
 import '../App.css';
-import BroPicture from '../Images/MnCpic.jpg'; 
-import BirdGif from '../Images/flappybird.gif';
-import HockeyGif from '../Images/hockeyplayer.gif';
+import BroPicture from '../Images/mcCute.jpg'; 
+import BirdGif from '../Images/birdGif1.gif';
+import HockeyGif from '../Images/hockGif2.gif';
 import MyInfo from './MyInfo'
 import snapCodeRuff from '../Images/snapcodeBitmojiRuff.svg'
 import snapCodeBeebe from '../Images/snapcodeBitmojiBeebe.svg'
-import chillMike from '../Images/mikebeebechill.jpg'
+import chillMike from '../Images/gradMikeSqr.jpg'
+import chillRuff from '../Images/gradRuffSqr.jpg'
 import chiSkyline from '../Images/chi-skyline.png'
 import cltSkyline from '../Images/clt-skyline.png'
 import ReactPlayer from 'react-player'
+import MyProInfo from './MyProInfo';
 
 const Zoom = () => {
     useEffect(() => {
@@ -35,26 +37,30 @@ class Bios extends Component {
         this.state = {
             tab: 0,
             mikeInfo : {
-                name: "Michael Peter Beebe",
-                email: "mpb9@live.unc.edu",
-                image : chillMike, // TODO: add Mike's image
+                name: "General Information",
+                email: "michaelbeebe1031@gmail.com",
+                info: MyProInfo,
+                image: chillMike, 
                 sign: 'Scorpio',
                 uni: 'University of North Carolina at Chapel Hill',
                 major: 'Computer Science, Economics',
-                linkedIn: 'https://www.linkedin.com/in/michael-beebe-302664196/',
+                linkedIn: 'https://www.linkedin.com/in/michaelbeebe9/',
+                git: 'https://github.com/mpb9',
                 descr: 'Michael Beebe',
                 twitterName: 'mbeeebe',
                 snapCode: snapCodeBeebe,
                 skyline: chiSkyline
             },
             connorInfo : {
-                name: "Connor Blaise Ruff",
+                name: "General Information",
                 email: "cruff@nd.edu",
-                image: "https://ace.nd.edu/media/zoo/images/Connor_Ruff_5704571696f0947b46902f5ff16ddf67.jpg",
+                info: MyInfo,
+                image: chillRuff,
                 sign: 'Libra',
                 uni: 'University of Notre Dame',
                 major: 'Computer Science',
                 linkedIn: 'https://www.linkedin.com/in/connor-ruff-37b56616b/',
+                git: 'https://github.com/connor-ruff',
                 descr: 'Connor Ruff',
                 twitterName: '_connorruff_',
                 snapCode: snapCodeRuff,
@@ -88,20 +94,34 @@ class Bios extends Component {
                 <div id='biosDiv'>
                 <Zoom />
                     <AboutNav meetUs={this.meetUs} />
-                    <Container style = {{height:"100vh"}} fluid>
+                    {/*figure out height */}
+                    <Container style = {{height:"101.8vh"}} fluid>
                     <Row>
-                        <Col xs={3} id="bioSideCol">
-                             <img src={dispObj.image} alt='A Good Looking Guy' style={{ height: '200px', padding: '5px', borderRadius: 20}} ></img>
-                             <h5>Name: {dispObj.name}</h5>
-                             <h6>Email: {dispObj.email}</h6> 
-                             <h6>Education: {dispObj.uni}</h6>
-                             <h6>Major: {dispObj.major}</h6>
-                             <h6>Professional: <a href={dispObj.linkedIn}>linkedIn</a></h6>
-                             <h6>Sign: {dispObj.sign}</h6>
+                        <Col xs={3} id="bioSideCol" style = {{paddingBottom: '10px'}}>
+                            <img src={dispObj.image} alt='A Good Looking Guy' style={{ height: '200px', padding: '5px', marginTop: '10px', marginBottom:'-15px', borderRadius: 18}} ></img>
+                            <h5 style={{marginBottom: '5px'}}>{dispObj.name}</h5>
+                            <h6>Email: {dispObj.email}</h6> 
+                            <h6>Education: {dispObj.uni}</h6>
+                            <h6>Major: {dispObj.major}</h6>
+                            <h6>Professional: &nbsp;
+                                <a style={{ backgroundColor: '#D9E3E7', borderLeft: '2px solid #D9E3E7', 
+                                            borderRight: '2px solid #D9E3E7', cursor: 'pointer', color: '#4183C4'}} 
+                                            onClick={() => window.open(dispObj.linkedIn)}>LinkedIn</a> 
+                                &nbsp;&nbsp;&nbsp;
+                                <a style={{ backgroundColor: '#D9E3E7', borderLeft: '2px solid #D9E3E7', 
+                                            borderRight: '2px solid #D9E3E7', cursor: 'pointer', color: '#4183C4'}} 
+                                            onClick={() => window.open(dispObj.git)}>GitHub</a>
+                            </h6>
+                            {/* <h6>Sign: {dispObj.sign}</h6> */}
                         </Col>
                         <Col id="bioMainCol">
-                            <h1>{dispObj.descr}</h1>
-                            <MyInfo twitterName={dispObj.twitterName} snapCode={dispObj.snapCode}/>
+                            <Col xs={8}>
+                                <h1 style={{ marginTop: '12px', marginBottom: '10px'}}>{dispObj.descr}</h1>
+                            </Col>
+                            {/* temporary mikes is professional n ruffs is fun */}
+                            <dispObj.info twitterName={dispObj.twitterName} snapCode={dispObj.snapCode}/>
+                            {/* <MyProInfo twitterName={dispObj.twitterName} snapCode={dispObj.snapCode}/> */}
+                            {/* <MyInfo twitterName={dispObj.twitterName} snapCode={dispObj.snapCode}/> */}
                         </Col>
                     </Row>
                     <Row>
@@ -123,16 +143,17 @@ class Bios extends Component {
                 <div id='biosDiv'>
                 <Zoom/>
                     <AboutNav meetUs={this.meetUs} />
-                    <Container style = {{height:"100vh"}} fluid>
+                    {/*figure out height */}
+                    <Container style = {{height:"110vh"}} fluid>
                         <Row style={{paddingBottom: '15px'}}>
                             <Col>
                                 <br/>
-                                <h5> Mike and Connor's Web App!!! </h5>
+                                <h3> Mike and Connor's Web App! </h3>
                             </Col>
                         </Row>
-                        <Row style={{paddingBottom: '40px'}}>
+                        <Row style={{paddingBottom: '30px'}}>
                             <Col className="BPCol">
-                                <img src={HockeyGif} alt="MnC" className="HockeyGif"/>
+                                <img style={{height: '170px', marginTop: '75px'}} src={HockeyGif} alt="MnC" className="HockeyGif"/>
                                 
                             </Col>
                             <Col className="BPCol">
@@ -140,7 +161,7 @@ class Bios extends Component {
                                 
                             </Col>
                             <Col className="BPCol">
-                                <img src={BirdGif} alt="MnC" className="BirdGif"/>                                
+                                <img style={{height: '170px', marginTop: '75px'}} src={BirdGif} alt="MnC" className="BirdGif"/>                                
                             </Col>
                         </Row>
                         <Row id='bioSideCol' style={{padding: '5px', margin: '1px'}}>
@@ -149,9 +170,10 @@ class Bios extends Component {
                                 <p style={{textIndent: '20px', fontSize: '15px'}}> Created to showcase individual passion projects, social media platforms, and personal information. </p>
                                 <p style={{textIndent: '25px', fontSize: '15px'}}> - "Birding" directs you to Connor Ruff's bird sighting lists and photographs.</p>
                                 <p style={{textIndent: '25px', fontSize: '15px'}}> - "Hockey" takes you to Michael Beebe's statistical analysis of NHL success rates against 
-                                    professional sports prediction models' assumptions.
-                                </p>
-                                <h5 style={{textIndent: '15px'}}> Enjoy! </h5>
+                                    professional sports prediction models' assumptions. </p>
+                                <p style={{textIndent: '25px', fontSize: '15px'}}> - "Graphics" takes you to Michael's 2D graphics playground, a space to create and experiment 
+                                    with graphics tools from a personal library. </p>
+                                <p style={{textIndent: '15px', fontWeight: 'bold'}}> Enjoy! </p>
                             </Col>
                         </Row>
                     </Container>   

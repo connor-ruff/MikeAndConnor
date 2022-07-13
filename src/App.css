@@ -2,20 +2,21 @@
 
 .App {
   text-align: center;
-  background-color: #659dbd;
- 
+   background-color: #696969;
+
 }
 
 #bioSideCol {
-  background-color: teal;
+  background-color: #7f9c96;
   border-radius: 5px;
+  height: fit-content;
 }
 
 .BroPicture {
   border-radius: 10px;
   max-width: 500px;
   overflow: hidden;
-  border: 1px solid #ddd;
+  border: 1px solid #7F9C96;
   border-radius: 10px;
   border-color: teal;
 }

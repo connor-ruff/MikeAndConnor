@@ -16,6 +16,8 @@ class AboutNav extends Component {
                 <Nav.Link onClick={() => this.props.meetUs(2)}>Meet Connor</Nav.Link>
                 <Nav.Link href='bird'>Birding</Nav.Link>
                 <Nav.Link href='hockey'>Hockey</Nav.Link>
+                <Nav.Link onClick={() => window.open('http://mygraphicsplayground.com/')}>Graphics</Nav.Link>
+
             </Nav>
             </Navbar>
             
