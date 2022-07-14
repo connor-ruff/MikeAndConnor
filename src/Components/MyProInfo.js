@@ -9,12 +9,12 @@ export class MyProInfo extends Component {
     render() {
         return (
             <Container className='basic' fluid>
-            <Row>
+            <Row >
                 <Col xs={8}>
                     {/* <h5 style={{paddingBottom: '10px', fontSize: '20px'}}>About Me:</h5> */}
                     <Container 
-                    style={{backgroundColor: 'lightgray', textAlign: 'left', border: '1px solid #595959', borderRadius: '2px',
-                            height: 'fit-content', width: '560px', padding: '5px', paddingBottom: '0px'}}>
+                    style={{ backgroundColor: 'lightgray', textAlign: 'left', border: '1px solid #595959', borderRadius: '2px',
+                            height: 'fit-content', width: '560px', padding: '5px', paddingBottom: '0px', overflow: 'auto'}}>
                         <h6 style={{ fontWeight: 'bold', marginLeft: '1px', fontSize: '15px'}}>About Me:</h6>
                         <p style={{marginLeft: '5px'}}> This summer, I graduated from the University of North Carolina at Chapel Hill with 
                             a B.S. in Computer Science and a B.A. in Economics. Throughout my time at university, 
@@ -54,7 +54,8 @@ export class MyProInfo extends Component {
                         </ul>
                     </Container>
                 </Col>
-                <Col xs={4}>
+                <Col xs={4} >
+                    <Container >
                     <h5 style={{paddingBottom: '-2px', marginTop:'10px', fontSize: '15px'}}>Find Me On Twitter:</h5>
                     <Timeline
                         dataSource={{
@@ -65,6 +66,7 @@ export class MyProInfo extends Component {
                             height: '300',
                             width: '250'
                         }} />
+                    </Container>
                 </Col>
             </Row>
             </Container>

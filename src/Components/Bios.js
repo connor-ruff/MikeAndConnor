@@ -95,7 +95,7 @@ class Bios extends Component {
                 <Zoom />
                     <AboutNav meetUs={this.meetUs} />
                     {/*figure out height */}
-                    <Container style = {{height:"101.8vh"}} fluid>
+                    <Container style = {{height:"fit-content"}} fluid>
                     <Row>
                         <Col xs={3} id="bioSideCol" style = {{paddingBottom: '10px'}}>
                             <img src={dispObj.image} alt='A Good Looking Guy' style={{ height: '200px', padding: '5px', marginTop: '10px', marginBottom:'-15px', borderRadius: 18}} ></img>
@@ -116,7 +116,7 @@ class Bios extends Component {
                         </Col>
                         <Col id="bioMainCol">
                             <Col xs={8}>
-                                <h1 style={{ marginTop: '12px', marginBottom: '10px'}}>{dispObj.descr}</h1>
+                                <h1 style={{ marginTop: '12px', marginBottom: '0px'}}>{dispObj.descr}</h1>
                             </Col>
                             {/* temporary mikes is professional n ruffs is fun */}
                             <dispObj.info twitterName={dispObj.twitterName} snapCode={dispObj.snapCode}/>
@@ -127,12 +127,12 @@ class Bios extends Component {
                     <Row>
                     </Row>
                     <img src={dispObj.skyline} style={{width: '100%',
+                        margin: '0px',
                         paddingTop: '10px',
                         height: 190,
                         left: 0,
-                       
-                        position: 'absolute', 
-                        bottom: -60, }} ></img>
+                        backgroundColor: '#696969',
+                        position: 'absolute' }} ></img>
                     
                     </Container>
                 </div>
@@ -144,15 +144,10 @@ class Bios extends Component {
                 <Zoom/>
                     <AboutNav meetUs={this.meetUs} />
                     {/*figure out height */}
-                    <Container style = {{height:"110vh"}} fluid>
-                        <Row style={{paddingBottom: '15px'}}>
-                            <Col>
-                                <br/>
-                                <h3> Mike and Connor's Web App! </h3>
-                            </Col>
-                        </Row>
-                        <Row style={{paddingBottom: '30px'}}>
-                            <Col className="BPCol">
+                    <Container style = {{height:""}} fluid>
+                        
+                        <Row style={{paddingBottom: '20px', paddingTop: '40px'}}>
+                            <Col className="BPCol" style={{overflow: 'hidden'}}>
                                 <img style={{height: '170px', marginTop: '75px'}} src={HockeyGif} alt="MnC" className="HockeyGif"/>
                                 
                             </Col>
@@ -160,22 +155,23 @@ class Bios extends Component {
                                 <img src={BroPicture} alt="MnC" className="BroPicture"/>
                                 
                             </Col>
-                            <Col className="BPCol">
+                            <Col className="BPCol" style={{overflow: 'hidden'}}>
                                 <img style={{height: '170px', marginTop: '75px'}} src={BirdGif} alt="MnC" className="BirdGif"/>                                
                             </Col>
                         </Row>
                         <Row id='bioSideCol' style={{padding: '5px', margin: '1px'}}>
                             <Col style={{textAlign: 'left', textIndent: '10px', color: '#ffffffea'}}>
-                                <h5> About: </h5>
+                                <h4> About: </h4>
                                 <p style={{textIndent: '20px', fontSize: '15px'}}> Created to showcase individual passion projects, social media platforms, and personal information. </p>
                                 <p style={{textIndent: '25px', fontSize: '15px'}}> - "Birding" directs you to Connor Ruff's bird sighting lists and photographs.</p>
                                 <p style={{textIndent: '25px', fontSize: '15px'}}> - "Hockey" takes you to Michael Beebe's statistical analysis of NHL success rates against 
                                     professional sports prediction models' assumptions. </p>
                                 <p style={{textIndent: '25px', fontSize: '15px'}}> - "Graphics" takes you to Michael's 2D graphics playground, a space to create and experiment 
                                     with graphics tools from a personal library. </p>
-                                <p style={{textIndent: '15px', fontWeight: 'bold'}}> Enjoy! </p>
+                                <p style={{textIndent: '20px', fontWeight: 'bold'}}> Enjoy! </p>
                             </Col>
                         </Row>
+                        <Row style={{padding:'5px'}}></Row>
                     </Container>   
                 </div>
             )
